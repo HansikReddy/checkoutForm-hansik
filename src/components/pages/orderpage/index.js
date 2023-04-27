@@ -57,103 +57,6 @@ function OrderPage() {
   return (
     <div className="container " style={{ marginTop: '8%' }}>
       <div className="row container mainCard w-100 p-5">
-        <div className="col-sm-11">
-          <div className="order-tytle fs-4">Purchase Reciept</div>
-        </div>
-        <div className="col-sm-1">
-          <FontAwesomeIcon
-            icon={faPencil}
-            onClick={handleEdit}
-            color="#fe6600"
-          />
-        </div>
-
-        <div className="col-sm-12">
-          <div className="row px-3">
-            <div className="col-sm-6">
-              <div className=" fs-5 fw-bold " style={{ color: 'gray' }}>
-                Date
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className=" fs-5 fw-bold " style={{ color: 'gray' }}>
-                Order No.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-sm-12">
-          <div className="row p-3">
-            <div className="col-sm-6">
-              <div className="">{new Date().toJSON().slice(0, 10)}</div>
-            </div>
-            <div className="col-sm-6">
-              <div className="">
-                {Math.floor(Math.random() * 100) * 21997017}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row w-100 mx-0" style={{ background: '#f8f8f8' }}>
-          <div className="col-sm-12">
-            <div className="row p-3">
-              <div className="col-sm-6">
-                <div className=" fs-5 fw-bold " style={{ color: 'gray' }}>
-                  Product
-                </div>
-              </div>
-              <div className="col-sm-6 ">
-                <div className=" fs-5 fw-bold" style={{ color: 'gray' }}>
-                  cost
-                </div>
-              </div>
-            </div>
-          </div>
-          {shippingDetails.productDetails.map((V, i) => {
-            return (
-              <>
-                <div className="col-sm-12">
-                  <div className="row p-3">
-                    <div className="col-sm-6">
-                      <div className="">{V.name}</div>
-                    </div>
-                    <div className="col-sm-6">
-                      <div className="">{V.price} $</div>
-                    </div>
-                  </div>
-                </div>
-              </>
-            )
-          })}
-          <div className="col-sm-12">
-            <div className="row p-3">
-              <div className="col-sm-6">
-                <div className="">Shipping</div>
-              </div>
-              <div className="col-sm-6">
-                <div className="">{(totalPrice * 5) / 100} $ </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-12">
-          <div className="row p-3">
-            <div className="col-sm-6"></div>
-            <div className="col-sm-6">
-              <div className="order-tytle fs-4">
-                {totalPrice + (totalPrice * 5) / 100} $
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-12 py-4">
-          <div className=" fs-5 fw-bold  " style={{ color: 'gray' }}>
-            Shiping Address
-          </div>
-          <div className=" py-2">{shippingDetails.paymentDetails?.address}</div>
-        </div>
         <div className="col-sm-12">
           <div className="order-tytle fs-4">Tracking Order</div>
           <Stapper />
@@ -175,7 +78,7 @@ function OrderPage() {
         <div className="col-sm-8">
           <div className="col-sm-12">
             <div className="row">
-              div.col-11
+              {/* div.col-11 */}
             </div>
             <div className="order-tytle fs-4 pb-2">Rating</div>
             <p>Give your Valuable feedback</p>

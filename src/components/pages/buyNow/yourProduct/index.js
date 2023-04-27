@@ -53,7 +53,7 @@ function YourProduct() {
       <div className="row m-4 just-center">
         <div className="row hrstyle mb-2  mx-0">
           <div className="col-sm-10 mx-0 ">
-            <h1 className="fs-3 mb fw-bold ">YOUR PRODUCTS</h1>
+            <h1 className="fs-3 mb fw-bold ">ORDER SUMMARY</h1>
           </div>
           <div className="col-sm-2 fs-6 fw-bold">
             <p>{wishList.length} items</p>
